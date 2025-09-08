@@ -47,7 +47,7 @@ const CustomAccordion = component$(({ items, show }: { items: any[]; show: Signa
                   class={cn(
                     "!text-xl font-medium text-gray-700 dark:text-gray-200 flex items-center justify-between w-full p-2.5 px-5",
                     isActive &&
-                      "bg-primary-100 dark:bg-primary-100/80 !important text-secondary-800 dark:text-secondary-800 !important font-bold !important",
+                    "bg-primary-100 dark:bg-primary-100/80 !important text-secondary-800 dark:text-secondary-800 !important font-bold !important",
                     "hover:bg-primary-100 dark:hover:bg-primary-100/80 transition-all duration-200"
                   )}
                   onClick$={() => (openIndex.value = openIndex.value === index ? null : index)}
@@ -80,7 +80,7 @@ const CustomAccordion = component$(({ items, show }: { items: any[]; show: Signa
                             class={cn(
                               "block text-gray-700 dark:text-gray-200 !text-xl p-3 pl-1 font-medium transition-all duration-200",
                               isSubitemActive &&
-                                "bg-primary-100 dark:bg-primary-100/80 !important text-secondary-800 dark:text-secondary-800 !important font-bold !important",
+                              "bg-primary-100 dark:bg-primary-100/80 !important text-secondary-800 dark:text-secondary-800 !important font-bold !important",
                               "hover:bg-primary-100 dark:hover:bg-primary-100/80"
                             )}
                             onClick$={closeModal}
@@ -99,7 +99,7 @@ const CustomAccordion = component$(({ items, show }: { items: any[]; show: Signa
                 class={cn(
                   "block lg text-gray-700 !text-xl dark:text-gray-200 p-3 px-5 font-medium transition-all duration-200",
                   isActive &&
-                    "bg-primary-100 dark:bg-primary-100/80 !important text-secondary-800 dark:text-secondary-800 !important font-bold !important",
+                  "bg-primary-100 dark:bg-primary-100/80 !important text-secondary-800 dark:text-secondary-800 !important font-bold !important",
                   "hover:bg-primary-100 dark:hover:bg-primary-100/80"
                 )}
                 onClick$={closeModal}
@@ -132,7 +132,7 @@ export default component$(() => {
         { title: "Our Space", href: "/about" },
         { title: "What To Expect", href: "/about#what-to-expect" },
         { title: "Benefits Of Clay", href: "/about#clay" },
-            { title: "Gallery", href: "/gallery/", badge: null },
+        { title: "Gallery", href: "/gallery/", badge: null },
 
         { title: "FAQ", href: "/faq" },
       ],
@@ -148,7 +148,7 @@ export default component$(() => {
     },
     { title: "Reviews", href: "/reviews/", badge: null },
     { title: "Connections", href: "/connections/", badge: null },
-        { title: "Contact", href: "/contact/", badge: null },
+    { title: "Contact", href: "/contact/", badge: null },
 
   ];
 
@@ -200,7 +200,7 @@ export default component$(() => {
                 >
                   <span class="relative z-10 flex items-center gap-2">
                     Book A Class
-                   
+
                   </span>
                   <div class="absolute inset-0 bg-gradient-to-r from-primary-300/40 via-primary-200/30 to-primary-300/40 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
@@ -231,10 +231,12 @@ export default component$(() => {
               >
                 <div class="text-center">
                   <h3 class="text-base font-bold text-gray-800 dark:text-gray-200">Open House</h3>
-                  <p class="text-sm font-medium text-gray-600 dark:text-gray-300">October 1st 7-9pm</p>
-                  <p class="text-sm mt-1">
-                    From team retreats to intimate celebrations, envision your event in our space.
-                  </p>
+                  <p class="text-sm font-medium text-gray-600 dark:text-gray-300">October 1st, 7-9pm</p>
+                 <p class="text-sm mt-1">
+  From team retreats to intimate celebrations, envision your next event in our space!
+  <br />
+  {/* <a href="/contact" class="underline pl-1"><span class="whitespace-nowrap">Contact Us</span></a> to collaborate on your next event! */}
+</p>
                 </div>
                 {/* <a
                   href="mailto:hello@earthenvessels.ca"
